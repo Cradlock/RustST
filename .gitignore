@@ -1,0 +1,6 @@
+/target
+.vscode/*
+
+Thumbs.db
+.DS_Store
+

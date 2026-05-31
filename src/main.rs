@@ -1,11 +1,20 @@
+mod collector;
+mod common;
+
 fn main() {
-    let s = 12;
+    
+    let args: Vec<String> = std::env::args().collect::<Vec<String>>();
 
-    let a = if s > 10 {
-        "greater than 10"
-    } else {
-        "less than or equal to 10"
-    };
+    if args.len() < 2 {
+        println!("Please provide at least one argument.");
+        return;
+    }
 
-    println!("The value of a is: {}", a);
+    let command: &String = &args[1]; 
+
+
+
 }
+
+
+
